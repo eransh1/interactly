@@ -1,0 +1,110 @@
+.outerCont{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.blackShadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+    background-color: rgb(0, 0, 0,.2);
+}
+.heading{
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    font-family: "Poppins";
+    font-weight: 700;
+    top: 15%;
+    left: 7%;
+    z-index: 50;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+.playButton{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+}
+.outerCont:hover .playButton{
+    transform: scale(1.2);
+}
+
+.videoAskBtn{
+    background: rgba(125, 0, 254);
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    padding: .5rem 2rem;
+    border-radius: 11px;
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+    z-index: 51;
+    cursor: pointer;
+}
+.btnSubText{
+    font-size: .7rem;
+    margin-left: -3rem;
+}
+.btnText{
+    font-size: 1.2rem;
+}
+.videoAskBtn:hover{
+    background: rgba(169, 0, 254, 0.829);;
+}
+.videoTools{
+    position: absolute;
+    color: white;
+    z-index: 51;
+    right: 5%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+}
+.timerText{
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: "Poppins";
+
+}
+.playBackSpeed{
+margin-left:.7rem;
+text-align: center;
+border: 2px solid white;
+border-radius: 5px;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+width: 34px;
+height: 26px;
+}
+.playBackSpeedSelect{
+    margin-left:.7rem;
+    text-align: center;
+    width: 34px;
+    height: 26px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;  
+}
+.fullScreen{
+    margin-left: .7rem;
+    padding-top: .4rem;
+    cursor: pointer;
+}

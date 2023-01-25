@@ -1,0 +1,80 @@
+.outerCont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.btn{
+    background: rgba(17, 17, 17, 0.1);
+    border: none;
+    border-radius: 30px;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: 12px 24px 12px 16px;
+    width: 336px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+}
+.btn:hover{
+    border:2px solid rgb(125, 0, 254)
+}
+.btnSelected{
+    background: rgb(125, 0, 254,.5);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: 12px 24px 12px 16px;
+    width: 336px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";  
+}
+.btnSingleSelected{
+    background: rgb(125, 0, 254);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: 12px 24px 12px 16px;
+    width: 336px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins"; 
+}
+
+.alpha{
+    display: block;
+    width: 28px;
+    align-items: center;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background: rgb(125, 0, 254);
+    font-weight: 500;
+    height: 28px;
+    justify-content: center;
+    margin-right: 10px;
+    display: flex;
+    
+}
+.heading{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: auto;
+}
