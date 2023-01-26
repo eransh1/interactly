@@ -1,0 +1,84 @@
+.form{
+    width: 80%;
+}
+.heading{
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 140%;
+    font-family: "Poppins";
+    margin-bottom: 1rem;
+}
+.input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    color: rgb(17, 17, 17);
+    font-size: 1.2rem;
+    line-height: 22px;
+    margin-bottom: 1.5rem;
+    outline: none;
+    padding: 12px 0px;
+
+}
+.input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(17, 17, 17);
+}
+.checkbox{
+    cursor: pointer;
+    height: 22px;
+    margin: 0px;
+    opacity: 0;
+    padding: 0px;
+    width: 22px;
+    z-index: 60;
+    border: 2px solid black;
+}
+
+.ticBoc{
+    height: 22px;   
+    width: 22px;
+    z-index: 60;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.tic{
+    width: 70%;
+    height: 70%;
+}
+.infoCont{
+    display: flex;
+}
+.checkboxCont{
+    margin-right: .5rem;
+}
+.disclamer{
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 14px;
+    line-height: 130%;
+}
+.submitBtn{
+    border: none;
+    background: rgb(125, 0, 254);
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    height: 68px;
+    line-height: 22px;
+    padding: 16px 32px;
+    transition: all 0.15s ease-in-out 0s;
+    margin-top: 2rem;
+    width: 100%;
+}
+.submitBtn:hover{
+    transform: scale(1.02);
+}

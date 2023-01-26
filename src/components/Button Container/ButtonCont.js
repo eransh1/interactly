@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { setVideo } from '../../Redux Store/optionSlice'
 import styles from "./style.module.css"
 import vid1 from "../../videos/first.mp4"
 import vid2 from "../../videos/second.mp4"
 import vid3 from "../../videos/third.mp4"
-const ButtonCont = ({options,setOptionSelected,SetSingleOptionSelected}) => {
-const dispatch=useDispatch()
+import {setOptionSelected} from "../../Redux Store/optionSelectedSlice"
+import {setSingleOptionSlectedSlice} from "../../Redux Store/singleOptionSelectedSlice"
 
+const ButtonCont = () => {
+const dispatch=useDispatch()
+const data=useSelector((state)=>state.optionDoc)
   const handleOptionClick=(item)=>{
+   
     if(item.alpha){
 let elem=document.getElementById(`${item.id}`)
 if(item.id===1){dispatch(setVideo(vid2))}
@@ -21,19 +25,19 @@ let idd=setInterval(()=>{
   
 setTimeout(() => {
   clearInterval(idd)
-  setOptionSelected(item.id)
+  dispatch(setOptionSelected(item.id))
 }, 400);
     }
     if(!item.alpha){
-      SetSingleOptionSelected(true)
+      dispatch(setSingleOptionSlectedSlice(true))
     }
   }
    
 
   return (
     <>
-      <div className={styles.outerCont}>
-        {options.map((item)=>{
+      <div style={{marginLeft:"-1rem",marginBottom:"3rem"}} className={styles.outerCont}>
+        {data.option.map((item)=>{
           return <>
           <div onClick={()=>handleOptionClick(item)} id={item.id} className={!item.alpha?styles.btnSingleSelected:styles.btn} key={item.alpha}>
          {item.alpha?<span className={styles.alpha}>{item.alpha}</span>:null} 

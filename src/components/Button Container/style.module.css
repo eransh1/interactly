@@ -78,3 +78,9 @@
     width: max-content;
     margin: auto;
 }
+
+@media(max-width:1024px){
+    .btn{
+        color: white;
+    } 
+}

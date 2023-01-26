@@ -108,3 +108,34 @@ height: 26px;
     padding-top: .4rem;
     cursor: pointer;
 }
+
+.mobileBtnCont{
+    position: absolute;
+    z-index: 60;
+    bottom: 15%;
+    left: 29%;
+}
+
+@media(max-width:1024px){
+    .playButton{
+        
+        top: 32%;
+        left: 45%;
+        
+    }
+    .heading{
+        top: 12%;
+    }
+    .playButton{
+        top: 30%;
+    }
+}
+
+@media(max-width:770px){
+    .mobileBtnCont{
+        position: absolute;
+        z-index: 60;
+        bottom: 17%;
+        left: 20%;
+    }
+}

@@ -1,17 +1,49 @@
+.videoToolCont{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 70;
+}
 .outerCont{
     display: flex;
     max-width: 100vw;
     height: 100vh;
+    /* position: fixed; */
+   
 }
+
 .videoComp{
     width: 50%;
-    height: 99%;
+    height: 100%;
 }
 .buttonCont{
     width: 50%;
-    height: 99%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;   
+}
+
+.mobileForm{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 61;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media(max-width:1024px){
+    .videoComp{
+        width: 100%;
+        height: 100%;
+    } 
+    .buttonCont{
+        display: none;
+    }
 }
