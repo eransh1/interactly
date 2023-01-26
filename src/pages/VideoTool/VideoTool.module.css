@@ -81,3 +81,12 @@
 .text{
     font-size: .7rem;
 }
+
+@media(max-width:1024px){
+    .leftCont{
+        width: 100%;
+    }
+    .rightCont{
+        display: none;
+    }
+}

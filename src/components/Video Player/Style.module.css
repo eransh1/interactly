@@ -23,7 +23,7 @@
 }
 .video{
     width: 100%;
-    height: 100%;
+    height: 99.45%;
     object-fit: cover;
     cursor: pointer;
 
@@ -137,5 +137,10 @@ height: 26px;
         z-index: 60;
         bottom: 17%;
         left: 20%;
+    }
+}
+@media(max-width:600px){
+    .playButton{
+        top: 30%; 
     }
 }

@@ -36,7 +36,7 @@ setTimeout(() => {
 
   return (
     <>
-      <div style={{marginLeft:"-1rem",marginBottom:"3rem"}} className={styles.outerCont}>
+      <div className={styles.outerCont}>
         {data.option.map((item)=>{
           return <>
           <div onClick={()=>handleOptionClick(item)} id={item.id} className={!item.alpha?styles.btnSingleSelected:styles.btn} key={item.alpha}>
